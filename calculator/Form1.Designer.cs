@@ -42,14 +42,14 @@ namespace calculator
             this.six_button = new System.Windows.Forms.Button();
             this.subtract_operation = new System.Windows.Forms.Button();
             this.reset_button = new System.Windows.Forms.Button();
-            this.nine_button = new System.Windows.Forms.Button();
             this.multiply_operation = new System.Windows.Forms.Button();
             this.delete_button = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.negative_Button = new System.Windows.Forms.Button();
             this.divide_operation = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.equal_button = new System.Windows.Forms.Button();
             this.add_operation = new System.Windows.Forms.Button();
+            this.nine_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // zero_button
@@ -171,15 +171,6 @@ namespace calculator
             this.reset_button.Text = "Reset";
             this.reset_button.UseVisualStyleBackColor = false;
             // 
-            // nine_button
-            // 
-            this.nine_button.Location = new System.Drawing.Point(148, 165);
-            this.nine_button.Name = "nine_button";
-            this.nine_button.Size = new System.Drawing.Size(62, 42);
-            this.nine_button.TabIndex = 17;
-            this.nine_button.Text = "9";
-            this.nine_button.UseVisualStyleBackColor = true;
-            // 
             // multiply_operation
             // 
             this.multiply_operation.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -200,15 +191,15 @@ namespace calculator
             this.delete_button.Text = "Clear";
             this.delete_button.UseVisualStyleBackColor = false;
             // 
-            // button16
+            // negative_Button
             // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button16.Location = new System.Drawing.Point(148, 124);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(62, 35);
-            this.button16.TabIndex = 20;
-            this.button16.Text = "+/-";
-            this.button16.UseVisualStyleBackColor = false;
+            this.negative_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.negative_Button.Location = new System.Drawing.Point(148, 124);
+            this.negative_Button.Name = "negative_Button";
+            this.negative_Button.Size = new System.Drawing.Size(62, 35);
+            this.negative_Button.TabIndex = 20;
+            this.negative_Button.Text = "+/-";
+            this.negative_Button.UseVisualStyleBackColor = false;
             // 
             // divide_operation
             // 
@@ -248,6 +239,15 @@ namespace calculator
             this.add_operation.Text = "+";
             this.add_operation.UseVisualStyleBackColor = false;
             // 
+            // nine_button
+            // 
+            this.nine_button.Location = new System.Drawing.Point(148, 165);
+            this.nine_button.Name = "nine_button";
+            this.nine_button.Size = new System.Drawing.Size(62, 42);
+            this.nine_button.TabIndex = 17;
+            this.nine_button.Text = "9";
+            this.nine_button.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -258,7 +258,7 @@ namespace calculator
             this.Controls.Add(this.equal_button);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.divide_operation);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.negative_Button);
             this.Controls.Add(this.delete_button);
             this.Controls.Add(this.multiply_operation);
             this.Controls.Add(this.nine_button);
@@ -297,14 +297,14 @@ namespace calculator
         private System.Windows.Forms.Button six_button;
         private System.Windows.Forms.Button subtract_operation;
         private System.Windows.Forms.Button reset_button;
-        private System.Windows.Forms.Button nine_button;
         private System.Windows.Forms.Button multiply_operation;
         private System.Windows.Forms.Button delete_button;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button negative_Button;
         private System.Windows.Forms.Button divide_operation;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button equal_button;
         private System.Windows.Forms.Button add_operation;
+        private System.Windows.Forms.Button nine_button;
     }
 }
 
