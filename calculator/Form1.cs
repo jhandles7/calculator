@@ -12,8 +12,11 @@ namespace calculator
 {
     public partial class Form1 : Form
     {
-        
-        
+
+        string user_input = "";
+
+        string num1 = "";
+        string num2 = "";
 
         public Form1()
         {
@@ -37,6 +40,7 @@ namespace calculator
         private void zero_button_Click(object sender, EventArgs e)
         {
             OutputTxtBox.Text += "0";
+            user_input += "0";
         }
 
         private void one_button_Click(object sender, EventArgs e)
@@ -44,12 +48,14 @@ namespace calculator
             if (OutputTxtBox.Text == "0")
             {
                 OutputTxtBox.Text = "1";
+                
             }
             else
             {
                 OutputTxtBox.Text += "1";
             }
-            
+
+            user_input += "1";
         }
 
         private void two_button_Click(object sender, EventArgs e)
@@ -62,6 +68,7 @@ namespace calculator
             {
                 OutputTxtBox.Text += "2";
             }
+            user_input += "2";
         }
 
         private void three_button_Click(object sender, EventArgs e)
@@ -74,6 +81,7 @@ namespace calculator
             {
                 OutputTxtBox.Text += "3";
             }
+            user_input += "3";
         }
 
         private void four_button_Click(object sender, EventArgs e)
@@ -86,6 +94,7 @@ namespace calculator
             {
                 OutputTxtBox.Text += "4";
             }
+            user_input += "4";
         }
 
         private void five_button_Click(object sender, EventArgs e)
@@ -98,6 +107,7 @@ namespace calculator
             {
                 OutputTxtBox.Text += "5";
             }
+            user_input += "5";
         }
 
         private void six_button_Click(object sender, EventArgs e)
@@ -110,6 +120,7 @@ namespace calculator
             {
                 OutputTxtBox.Text += "6";
             }
+            user_input += "6";
         }
 
         private void seven_button_Click(object sender, EventArgs e)
@@ -122,6 +133,7 @@ namespace calculator
             {
                 OutputTxtBox.Text += "7";
             }
+            user_input += "7";
         }
 
         private void eight_button_Click(object sender, EventArgs e)
@@ -134,6 +146,7 @@ namespace calculator
             {
                 OutputTxtBox.Text += "8";
             }
+            user_input += "8";
         }
 
         private void nine_button_Click(object sender, EventArgs e)
@@ -146,6 +159,7 @@ namespace calculator
             {
                 OutputTxtBox.Text += "9";
             }
+            user_input += "9";
         }
 
 
@@ -171,6 +185,32 @@ namespace calculator
 
         private void negative_Button_Click(object sender, EventArgs e)
         {
+        }
+
+        private void delete_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //Operation of numbers (+,-,/,*)
+        private void add_operation_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void subtract_operation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void multiply_operation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void divide_operation_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

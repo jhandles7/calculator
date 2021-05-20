@@ -209,6 +209,7 @@ namespace calculator
             this.subtract_operation.TabIndex = 15;
             this.subtract_operation.Text = "-";
             this.subtract_operation.UseVisualStyleBackColor = false;
+            this.subtract_operation.Click += new System.EventHandler(this.subtract_operation_Click);
             // 
             // reset_button
             // 
@@ -236,6 +237,7 @@ namespace calculator
             this.multiply_operation.TabIndex = 18;
             this.multiply_operation.Text = "X";
             this.multiply_operation.UseVisualStyleBackColor = false;
+            this.multiply_operation.Click += new System.EventHandler(this.multiply_operation_Click);
             // 
             // delete_button
             // 
@@ -249,6 +251,7 @@ namespace calculator
             this.delete_button.TabIndex = 19;
             this.delete_button.Text = "Clear";
             this.delete_button.UseVisualStyleBackColor = false;
+            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
             // negative_Button
             // 
@@ -276,6 +279,7 @@ namespace calculator
             this.divide_operation.TabIndex = 21;
             this.divide_operation.Text = "/";
             this.divide_operation.UseVisualStyleBackColor = false;
+            this.divide_operation.Click += new System.EventHandler(this.divide_operation_Click);
             // 
             // OutputTxtBox
             // 
@@ -319,6 +323,7 @@ namespace calculator
             this.add_operation.TabIndex = 24;
             this.add_operation.Text = "+";
             this.add_operation.UseVisualStyleBackColor = false;
+            this.add_operation.Click += new System.EventHandler(this.add_operation_Click);
             // 
             // nine_button
             // 
