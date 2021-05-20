@@ -310,6 +310,7 @@ namespace calculator
             this.equal_button.TabIndex = 23;
             this.equal_button.Text = "=";
             this.equal_button.UseVisualStyleBackColor = false;
+            this.equal_button.Click += new System.EventHandler(this.equal_button_Click_1);
             // 
             // add_operation
             // 

@@ -15,8 +15,10 @@ namespace calculator
 
         string user_input = "";
 
-        string num1 = "";
-        string num2 = "";
+        double num1;
+        
+        string operation;
+        double result;
 
         public Form1()
         {
@@ -167,6 +169,7 @@ namespace calculator
         private void reset_button_Click(object sender, EventArgs e)
         {
             OutputTxtBox.Text = "0";
+            user_input = "";
         }
 
         private void decimal_button_Click(object sender, EventArgs e)
@@ -195,7 +198,10 @@ namespace calculator
         //Operation of numbers (+,-,/,*)
         private void add_operation_Click(object sender, EventArgs e)
         {
-           
+            num1 = Convert.ToDouble(user_input);
+            OutputTxtBox.Text = "0";
+            operation = "+";
+            user_input = "";
         }
 
         private void subtract_operation_Click(object sender, EventArgs e)
@@ -211,6 +217,20 @@ namespace calculator
         private void divide_operation_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void equal_button_Click_1(object sender, EventArgs e)
+        {
+            double num2;
+            num2 = Convert.ToDouble(user_input);
+
+            if (operation == "+")
+            {
+                result = num1 + num2;
+                OutputTxtBox.Text = Convert.ToString(result);
+                user_input = result.ToString();
+               
+            }
         }
     }
 }
