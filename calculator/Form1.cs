@@ -206,7 +206,10 @@ namespace calculator
 
         private void subtract_operation_Click(object sender, EventArgs e)
         {
-
+            num1 = Convert.ToDouble(user_input);
+            OutputTxtBox.Text = "0";
+            operation = "-";
+            user_input = "";
         }
 
         private void multiply_operation_Click(object sender, EventArgs e)
@@ -230,6 +233,13 @@ namespace calculator
                 OutputTxtBox.Text = Convert.ToString(result);
                 user_input = result.ToString();
                
+            }
+
+            if (operation == "-")
+            {
+                result = num1 - num2;
+                OutputTxtBox.Text = Convert.ToString(result);
+                user_input = result.ToString();
             }
         }
     }
