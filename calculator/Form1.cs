@@ -30,12 +30,7 @@ namespace calculator
 
         }
 
-        
 
-        private void equal_button_Click(object sender, EventArgs e)
-        {
-
-        }
 
 
         //Number buttons
@@ -262,7 +257,12 @@ namespace calculator
                     OutputTxtBox.Text = "Error";
                 }
 
-      
+                else
+                {
+                    result = num1 / num2;
+                    OutputTxtBox.Text = Convert.ToString(result);
+                    user_input = result.ToString();
+                }
 
             }
         }
