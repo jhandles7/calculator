@@ -222,7 +222,10 @@ namespace calculator
 
         private void divide_operation_Click(object sender, EventArgs e)
         {
-
+            num1 = Convert.ToDouble(user_input);
+            OutputTxtBox.Text = "0";
+            operation = "/";
+            user_input = "";
         }
 
         private void equal_button_Click_1(object sender, EventArgs e)
@@ -254,7 +257,12 @@ namespace calculator
 
             if (operation == "/")
             {
-                
+                if (num2 == 0)
+                {
+                    OutputTxtBox.Text = "Error";
+                }
+
+      
 
             }
         }
