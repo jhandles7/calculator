@@ -25,10 +25,12 @@ namespace calculator
             InitializeComponent();
         }
 
-        private void Percent_button_Click(object sender, EventArgs e)
-        {
-
-        }
+        ///private void Percent_button_Click(object sender, EventArgs e)
+        ///{
+            //num1 = Convert.ToDouble(user_input);
+            //OutputTxtBox.Text += "%";
+            
+        //}
 
 
 
@@ -65,6 +67,7 @@ namespace calculator
             {
                 OutputTxtBox.Text += "2";
             }
+
             user_input += "2";
         }
 
@@ -265,6 +268,16 @@ namespace calculator
                 }
 
             }
+
+            
+        }
+
+        private void Percent_button_Click_1(object sender, EventArgs e)
+        {
+            num1 = Convert.ToDouble(user_input);
+            num1 = num1 / 100;
+            OutputTxtBox.Text = Convert.ToString(num1);
+            user_input = num1.ToString();
         }
     }
 }

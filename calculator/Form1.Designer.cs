@@ -92,6 +92,7 @@ namespace calculator
             this.Percent_button.TabIndex = 4;
             this.Percent_button.Text = "%";
             this.Percent_button.UseVisualStyleBackColor = true;
+            this.Percent_button.Click += new System.EventHandler(this.Percent_button_Click_1);
             // 
             // one_button
             // 
