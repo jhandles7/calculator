@@ -204,7 +204,15 @@ namespace calculator
 
         private void delete_button_Click(object sender, EventArgs e)
         {
-
+            if (OutputTxtBox.TextLength <1)
+            {
+                OutputTxtBox.Text = "0";
+            }
+            else
+            {
+                OutputTxtBox.Text = OutputTxtBox.Text.Remove(OutputTxtBox.TextLength - 1);
+            }
+            user_input = OutputTxtBox.Text;
         }
 
         //Operation of numbers (+,-,/,*)
