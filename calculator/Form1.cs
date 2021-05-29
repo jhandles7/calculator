@@ -186,6 +186,20 @@ namespace calculator
 
         private void negative_Button_Click(object sender, EventArgs e)
         {
+            double negative_num;
+
+            negative_num = double.Parse(OutputTxtBox.Text);
+            negative_num *= -1;
+            if (OutputTxtBox.Text.Substring(0) == "0")
+            {
+                OutputTxtBox.Text = negative_num.ToString().Remove(1);
+            }
+            else
+            {
+                OutputTxtBox.Text = negative_num.ToString();
+            }
+            
+            user_input = OutputTxtBox.Text;         
         }
 
         private void delete_button_Click(object sender, EventArgs e)
@@ -200,6 +214,7 @@ namespace calculator
             OutputTxtBox.Text = "0";
             operation = "+";
             user_input = "";
+            
         }
 
         private void subtract_operation_Click(object sender, EventArgs e)
