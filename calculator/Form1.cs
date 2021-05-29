@@ -33,8 +33,6 @@ namespace calculator
         //}
 
 
-
-
         //Number buttons
         private void zero_button_Click(object sender, EventArgs e)
         {
@@ -218,41 +216,78 @@ namespace calculator
         //Operation of numbers (+,-,/,*)
         private void add_operation_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(user_input);
-            OutputTxtBox.Text = "0";
-            operation = "+";
-            user_input = "";
+            try
+            {
+                num1 = Convert.ToDouble(user_input);
+                OutputTxtBox.Text = "0";
+                operation = "+";
+                user_input = "";
+            }
+            catch (Exception)
+            {
+                add_operation.Enabled = false;
+            }
             
         }
 
         private void subtract_operation_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(user_input);
-            OutputTxtBox.Text = "0";
-            operation = "-";
-            user_input = "";
+            try
+            {
+                num1 = Convert.ToDouble(user_input);
+                OutputTxtBox.Text = "0";
+                operation = "-";
+                user_input = "";
+            }
+            catch (Exception)
+            {
+                subtract_operation.Enabled = false;
+            }     
         }
 
         private void multiply_operation_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(user_input);
-            OutputTxtBox.Text = "0";
-            operation = "*";
-            user_input = "";
+            try
+            {
+                num1 = Convert.ToDouble(user_input);
+                OutputTxtBox.Text = "0";
+                operation = "*";
+                user_input = "";
+            }
+            catch (Exception)
+            {
+
+                multiply_operation.Enabled = false;
+            }
+           
         }
 
         private void divide_operation_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(user_input);
-            OutputTxtBox.Text = "0";
-            operation = "/";
-            user_input = "";
+            try
+            {
+                num1 = Convert.ToDouble(user_input);
+                OutputTxtBox.Text = "0";
+                operation = "/";
+                user_input = "";
+            }
+            catch (Exception)
+            {
+
+                divide_operation.Enabled = false;
+            }
+           
         }
 
         private void equal_button_Click_1(object sender, EventArgs e)
         {
             double num2;
             num2 = Convert.ToDouble(user_input);
+            //enable the operation button
+            subtract_operation.Enabled = true;
+            add_operation.Enabled = true;
+            multiply_operation.Enabled = true;
+            divide_operation.Enabled = true;
 
             if (operation == "+")
             {
@@ -289,10 +324,7 @@ namespace calculator
                     OutputTxtBox.Text = Convert.ToString(result);
                     user_input = result.ToString();
                 }
-
             }
-
-            
         }
 
         private void Percent_button_Click_1(object sender, EventArgs e)
