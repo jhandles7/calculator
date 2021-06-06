@@ -14,9 +14,7 @@ namespace calculator
     {
 
         string user_input = "";
-
         double num1;
-        
         string operation;
         double result;
 
@@ -45,7 +43,6 @@ namespace calculator
             if (OutputTxtBox.Text == "0")
             {
                 OutputTxtBox.Text = "1";
-                
             }
             else
             {
@@ -169,8 +166,7 @@ namespace calculator
         }
 
         private void decimal_button_Click(object sender, EventArgs e)
-        {
-                      
+        {                      
             if (OutputTxtBox.Text.Contains("."))
             {
                 
@@ -227,7 +223,8 @@ namespace calculator
             {
                 add_operation.Enabled = false;
             }
-            
+            //enable the percent button
+            Percent_button.Enabled = true;
         }
 
         private void subtract_operation_Click(object sender, EventArgs e)
@@ -242,7 +239,9 @@ namespace calculator
             catch (Exception)
             {
                 subtract_operation.Enabled = false;
-            }     
+            }
+            //enable percent button
+            Percent_button.Enabled = true;
         }
 
         private void multiply_operation_Click(object sender, EventArgs e)
@@ -256,10 +255,10 @@ namespace calculator
             }
             catch (Exception)
             {
-
                 multiply_operation.Enabled = false;
             }
-           
+            //enable percent button
+            Percent_button.Enabled = true;
         }
 
         private void divide_operation_Click(object sender, EventArgs e)
@@ -273,10 +272,10 @@ namespace calculator
             }
             catch (Exception)
             {
-
                 divide_operation.Enabled = false;
             }
-           
+            //enable percent button
+            Percent_button.Enabled = true;
         }
 
         private void equal_button_Click_1(object sender, EventArgs e)
@@ -325,14 +324,24 @@ namespace calculator
                     user_input = result.ToString();
                 }
             }
+            //enable percent button
+            Percent_button.Enabled = true;
         }
 
         private void Percent_button_Click_1(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(user_input);
-            num1 = num1 / 100;
-            OutputTxtBox.Text = Convert.ToString(num1);
-            user_input = num1.ToString();
+            try
+            {
+                num1 = Convert.ToDouble(user_input);
+                num1 = num1 / 100;
+                OutputTxtBox.Text = Convert.ToString(num1);
+                user_input = num1.ToString();
+                Percent_button.Enabled = false;
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }
