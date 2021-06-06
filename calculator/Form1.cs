@@ -165,6 +165,7 @@ namespace calculator
             user_input = "";
             previous_num = 0;
             count = 0;
+            multi_prev = 1;
         }
 
         private void decimal_button_Click(object sender, EventArgs e)
@@ -269,14 +270,17 @@ namespace calculator
             equal_button.Enabled = true;
         }
 
+        double multi_prev = 1;
         private void multiply_operation_Click(object sender, EventArgs e)
         {
+            
             try
             {
-                num1 = Convert.ToDouble(user_input);
+                num1 = Convert.ToDouble(user_input) * multi_prev;
                 OutputTxtBox.Text = "0";
                 operation = "*";
                 user_input = "";
+                multi_prev = num1;
             }
             catch (Exception)
             {
@@ -288,14 +292,28 @@ namespace calculator
             equal_button.Enabled = true;
         }
 
+        double divide_prev = 1;
         private void divide_operation_Click(object sender, EventArgs e)
         {
             try
             {
-                num1 = Convert.ToDouble(user_input);
-                OutputTxtBox.Text = "0";
-                operation = "/";
-                user_input = "";
+                if (divide_prev ==1)
+                {
+                    num1 = Convert.ToDouble(user_input) / divide_prev;
+                    OutputTxtBox.Text = "0";
+                    operation = "/";
+                    user_input = "";
+                    divide_prev = num1;
+                }
+                else
+                {
+                    num1 = divide_prev / Convert.ToDouble(user_input);
+                    OutputTxtBox.Text = "0";
+                    operation = "/";
+                    user_input = "";
+                    divide_prev = num1;
+                }
+               
             }
             catch (Exception)
             {
@@ -359,6 +377,7 @@ namespace calculator
             equal_button.Enabled = false;
             previous_num = 0;
             count = 0;
+            multi_prev = 1;
         }
 
         private void Percent_button_Click_1(object sender, EventArgs e)
