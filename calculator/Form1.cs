@@ -225,6 +225,8 @@ namespace calculator
             }
             //enable the percent button
             Percent_button.Enabled = true;
+            //enable equal button
+            equal_button.Enabled = true;
         }
 
         private void subtract_operation_Click(object sender, EventArgs e)
@@ -242,6 +244,8 @@ namespace calculator
             }
             //enable percent button
             Percent_button.Enabled = true;
+            //enable equal button
+            equal_button.Enabled = true;
         }
 
         private void multiply_operation_Click(object sender, EventArgs e)
@@ -259,6 +263,8 @@ namespace calculator
             }
             //enable percent button
             Percent_button.Enabled = true;
+            //enable equal button
+            equal_button.Enabled = true;
         }
 
         private void divide_operation_Click(object sender, EventArgs e)
@@ -276,6 +282,8 @@ namespace calculator
             }
             //enable percent button
             Percent_button.Enabled = true;
+            //enable equal button
+            equal_button.Enabled = true;
         }
 
         private void equal_button_Click_1(object sender, EventArgs e)
@@ -326,6 +334,8 @@ namespace calculator
             }
             //enable percent button
             Percent_button.Enabled = true;
+            //disable equal button
+            equal_button.Enabled = false;
         }
 
         private void Percent_button_Click_1(object sender, EventArgs e)
