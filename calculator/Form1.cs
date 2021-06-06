@@ -378,6 +378,7 @@ namespace calculator
             previous_num = 0;
             count = 0;
             multi_prev = 1;
+            divide_prev = 1;
         }
 
         private void Percent_button_Click_1(object sender, EventArgs e)
