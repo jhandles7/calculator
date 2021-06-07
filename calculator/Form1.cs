@@ -212,17 +212,18 @@ namespace calculator
             user_input = OutputTxtBox.Text;
         }
 
-        double previous_num = 0;
+        int previous_num = 0;
         //Operation of numbers (+,-,/,*)
         private void add_operation_Click(object sender, EventArgs e)
         {
             try
             {
-                num1 = Convert.ToDouble(user_input) + previous_num;
+                num1 = Convert.ToDouble(user_input) + Convert.ToDouble(previous_num);
                 OutputTxtBox.Text = "0";
                 operation = "+";
                 user_input = "";
-                previous_num = num1;
+                previous_num = Convert.ToInt32(num1);
+                
             }
             catch (Exception)
             {
@@ -242,11 +243,11 @@ namespace calculator
             {
                 if (count == 0)
                 {
-                    num1 = Convert.ToDouble(user_input) - previous_num;
+                    num1 = Convert.ToDouble(user_input) - Convert.ToDouble(previous_num);
                     OutputTxtBox.Text = "0";
                     operation = "-";
                     user_input = "";
-                    previous_num = num1;
+                    previous_num = Convert.ToInt32(num1);
                     count++;
                 }
                 else
@@ -255,7 +256,7 @@ namespace calculator
                     OutputTxtBox.Text = "0";
                     operation = "-";
                     user_input = "";
-                    previous_num = num1;
+                    previous_num = Convert.ToInt32(num1);
                     count++;
                 }
                 
@@ -270,7 +271,7 @@ namespace calculator
             equal_button.Enabled = true;
         }
 
-        double multi_prev = 1;
+        int multi_prev = 1;
         private void multiply_operation_Click(object sender, EventArgs e)
         {
             
@@ -280,7 +281,7 @@ namespace calculator
                 OutputTxtBox.Text = "0";
                 operation = "*";
                 user_input = "";
-                multi_prev = num1;
+                multi_prev = Convert.ToInt32(num1);
             }
             catch (Exception)
             {
@@ -292,7 +293,7 @@ namespace calculator
             equal_button.Enabled = true;
         }
 
-        double divide_prev = 1;
+        int divide_prev = 1;
         private void divide_operation_Click(object sender, EventArgs e)
         {
             try
@@ -303,7 +304,7 @@ namespace calculator
                     OutputTxtBox.Text = "0";
                     operation = "/";
                     user_input = "";
-                    divide_prev = num1;
+                    divide_prev = Convert.ToInt32(num1);
                 }
                 else
                 {
@@ -311,7 +312,7 @@ namespace calculator
                     OutputTxtBox.Text = "0";
                     operation = "/";
                     user_input = "";
-                    divide_prev = num1;
+                    divide_prev = Convert.ToInt32(num1);
                 }
                
             }
