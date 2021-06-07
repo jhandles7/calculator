@@ -167,6 +167,7 @@ namespace calculator
             count = 0;
             multi_prev = 1;
             labelOperation.Text = "";
+            num1 = 0;
         }
 
         private void decimal_button_Click(object sender, EventArgs e)
@@ -219,13 +220,27 @@ namespace calculator
         {
             try
             {
-                num1 = Convert.ToDouble(user_input) + Convert.ToDouble(previous_num);
-                OutputTxtBox.Text = "0";
-                operation = "+";
-                labelOperation.Text = num1.ToString() + operation;
-                user_input = "";
-                previous_num = Convert.ToInt32(num1);
-                count++;
+                if (num1 == 0)
+                {
+                    num1 = Convert.ToDouble(user_input) + Convert.ToDouble(previous_num);
+                    OutputTxtBox.Text = "0";
+                    operation = "+";
+                    labelOperation.Text = num1.ToString() + operation;
+                    user_input = "";
+                    previous_num = Convert.ToInt32(num1);
+                    count++;
+                }
+                else
+                {
+                    equal_button.PerformClick();
+                    operation = "+";
+                    labelOperation.Text = result.ToString() + operation;
+                    user_input = "";
+                    OutputTxtBox.Text = "0";
+                    num1 = result;
+                    equal_button.PerformClick();
+                    
+                }
             }
             catch (Exception)
             {
@@ -243,7 +258,7 @@ namespace calculator
             
             try
             {
-                if (count == 0)
+                if (num1 == 0)
                 {
                     num1 = Convert.ToDouble(user_input) - Convert.ToDouble(previous_num);
                     OutputTxtBox.Text = "0";
@@ -255,13 +270,13 @@ namespace calculator
                 }
                 else
                 {
-                    num1 = -Convert.ToDouble(user_input) + previous_num;
-                    OutputTxtBox.Text = "0";
-                    labelOperation.Text = num1.ToString() + operation;
+                    equal_button.PerformClick();
                     operation = "-";
+                    labelOperation.Text = result.ToString() + operation;
                     user_input = "";
-                    previous_num = Convert.ToInt32(num1);
-                    count++;
+                    OutputTxtBox.Text = "0";
+                    num1 = result;
+                    equal_button.PerformClick();
                 }
                 
             }
@@ -282,13 +297,26 @@ namespace calculator
             
             try
             {
-                num1 = Convert.ToDouble(user_input) * multi_prev;
-                OutputTxtBox.Text = "0";
-                operation = "*";
-                labelOperation.Text = num1.ToString() + operation;
-                user_input = "";
-                multi_prev = Convert.ToInt32(num1);
-                count++;
+                if (num1 == 0)
+                {
+                    num1 = Convert.ToDouble(user_input) * multi_prev;
+                    OutputTxtBox.Text = "0";
+                    operation = "*";
+                    labelOperation.Text = num1.ToString() + operation;
+                    user_input = "";
+                    multi_prev = Convert.ToInt32(num1);
+                    count++;
+                }
+                else
+                {
+                    equal_button.PerformClick();
+                    operation = "*";
+                    labelOperation.Text = result.ToString() + operation;
+                    user_input = "";
+                    OutputTxtBox.Text = "0";
+                    num1 = result;
+                    equal_button.PerformClick();
+                }
             }
             catch (Exception)
             {
@@ -305,27 +333,26 @@ namespace calculator
         {
             try
             {
-                if (divide_prev ==1)
+                if (num1 == 0)
                 {
-                    num1 = Convert.ToDouble(user_input) / divide_prev;
-                    OutputTxtBox.Text = "0";
-                    operation = "/";
-                    labelOperation.Text = num1.ToString() + operation;
+                    equal_button.PerformClick();
+                    operation = "-";
+                    labelOperation.Text = result.ToString() + operation;
                     user_input = "";
-                    divide_prev = Convert.ToInt32(num1);
-                    count++;
+                    OutputTxtBox.Text = "0";
+                    num1 = result;
+                    equal_button.PerformClick();
                 }
                 else
                 {
-                    num1 = divide_prev / Convert.ToDouble(user_input);
-                    OutputTxtBox.Text = "0";
+                    equal_button.PerformClick();
                     operation = "/";
-                    labelOperation.Text = num1.ToString() + operation;
+                    labelOperation.Text = result.ToString() + operation;
                     user_input = "";
-                    divide_prev = Convert.ToInt32(num1);
-                    count++;
+                    OutputTxtBox.Text = "0";
+                    num1 = result;
+                    equal_button.PerformClick();
                 }
-               
             }
             catch (Exception)
             {
