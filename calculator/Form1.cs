@@ -166,6 +166,7 @@ namespace calculator
             previous_num = 0;
             count = 0;
             multi_prev = 1;
+            labelOperation.Text = "";
         }
 
         private void decimal_button_Click(object sender, EventArgs e)
@@ -221,9 +222,10 @@ namespace calculator
                 num1 = Convert.ToDouble(user_input) + Convert.ToDouble(previous_num);
                 OutputTxtBox.Text = "0";
                 operation = "+";
+                labelOperation.Text = num1.ToString() + operation;
                 user_input = "";
                 previous_num = Convert.ToInt32(num1);
-                
+                count++;
             }
             catch (Exception)
             {
@@ -231,8 +233,7 @@ namespace calculator
             }
             //enable the percent button
             Percent_button.Enabled = true;
-            //enable equal button
-            equal_button.Enabled = true;
+            
         }
 
         int count = 0;
@@ -267,8 +268,7 @@ namespace calculator
             }
             //enable percent button
             Percent_button.Enabled = true;
-            //enable equal button
-            equal_button.Enabled = true;
+            
         }
 
         int multi_prev = 1;
@@ -282,6 +282,7 @@ namespace calculator
                 operation = "*";
                 user_input = "";
                 multi_prev = Convert.ToInt32(num1);
+                count++;
             }
             catch (Exception)
             {
@@ -289,8 +290,7 @@ namespace calculator
             }
             //enable percent button
             Percent_button.Enabled = true;
-            //enable equal button
-            equal_button.Enabled = true;
+            
         }
 
         int divide_prev = 1;
@@ -305,6 +305,7 @@ namespace calculator
                     operation = "/";
                     user_input = "";
                     divide_prev = Convert.ToInt32(num1);
+                    count++;
                 }
                 else
                 {
@@ -313,6 +314,7 @@ namespace calculator
                     operation = "/";
                     user_input = "";
                     divide_prev = Convert.ToInt32(num1);
+                    count++;
                 }
                
             }
@@ -322,8 +324,7 @@ namespace calculator
             }
             //enable percent button
             Percent_button.Enabled = true;
-            //enable equal button
-            equal_button.Enabled = true;
+           
         }
 
         private void equal_button_Click_1(object sender, EventArgs e)
@@ -341,7 +342,7 @@ namespace calculator
                 result = num1 + num2;
                 OutputTxtBox.Text = Convert.ToString(result);
                 user_input = result.ToString();
-               
+                labelOperation.Text += num2 + "=";
             }
 
             if (operation == "-")
@@ -349,6 +350,7 @@ namespace calculator
                 result = num1 - num2;
                 OutputTxtBox.Text = Convert.ToString(result);
                 user_input = result.ToString();
+                labelOperation.Text += num2 + "=";
             }
 
             if (operation == "*")
@@ -356,6 +358,7 @@ namespace calculator
                 result = num1 * num2;
                 OutputTxtBox.Text = Convert.ToString(result);
                 user_input = result.ToString();
+                labelOperation.Text += num2 + "=";
             }
 
             if (operation == "/")
@@ -370,12 +373,12 @@ namespace calculator
                     result = num1 / num2;
                     OutputTxtBox.Text = Convert.ToString(result);
                     user_input = result.ToString();
+                    labelOperation.Text += num2 + "=";
                 }
             }
             //enable percent button
             Percent_button.Enabled = true;
-            //disable equal button
-            equal_button.Enabled = false;
+            
             previous_num = 0;
             count = 0;
             multi_prev = 1;

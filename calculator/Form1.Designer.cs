@@ -50,6 +50,7 @@ namespace calculator
             this.equal_button = new System.Windows.Forms.Button();
             this.add_operation = new System.Windows.Forms.Button();
             this.nine_button = new System.Windows.Forms.Button();
+            this.labelOperation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // zero_button
@@ -290,10 +291,10 @@ namespace calculator
             this.OutputTxtBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.OutputTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OutputTxtBox.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OutputTxtBox.Location = new System.Drawing.Point(12, 29);
+            this.OutputTxtBox.Location = new System.Drawing.Point(12, 54);
             this.OutputTxtBox.Multiline = true;
             this.OutputTxtBox.Name = "OutputTxtBox";
-            this.OutputTxtBox.Size = new System.Drawing.Size(284, 74);
+            this.OutputTxtBox.Size = new System.Drawing.Size(284, 49);
             this.OutputTxtBox.TabIndex = 22;
             this.OutputTxtBox.Text = "0";
             this.OutputTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -340,12 +341,23 @@ namespace calculator
             this.nine_button.UseVisualStyleBackColor = true;
             this.nine_button.Click += new System.EventHandler(this.nine_button_Click);
             // 
+            // labelOperation
+            // 
+            this.labelOperation.AutoSize = true;
+            this.labelOperation.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.labelOperation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelOperation.Location = new System.Drawing.Point(33, 65);
+            this.labelOperation.Name = "labelOperation";
+            this.labelOperation.Size = new System.Drawing.Size(0, 15);
+            this.labelOperation.TabIndex = 25;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(304, 378);
+            this.Controls.Add(this.labelOperation);
             this.Controls.Add(this.add_operation);
             this.Controls.Add(this.equal_button);
             this.Controls.Add(this.OutputTxtBox);
@@ -397,6 +409,7 @@ namespace calculator
         private System.Windows.Forms.Button equal_button;
         private System.Windows.Forms.Button add_operation;
         private System.Windows.Forms.Button nine_button;
+        private System.Windows.Forms.Label labelOperation;
     }
 }
 
