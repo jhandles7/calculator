@@ -428,12 +428,13 @@ namespace calculator
 
         private void Percent_button_Click_1(object sender, EventArgs e)
         {
+            double new_num;
             try
-            {
-                num1 = Convert.ToDouble(user_input);
-                num1 = num1 / 100;
-                OutputTxtBox.Text = Convert.ToString(num1);
-                user_input = num1.ToString();
+            {           
+                new_num = Convert.ToDouble(user_input);
+                new_num = new_num / 100;
+                OutputTxtBox.Text = Convert.ToString(new_num);
+                user_input = new_num.ToString();
                 Percent_button.Enabled = false;
             }
             catch (Exception)
