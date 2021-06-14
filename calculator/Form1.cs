@@ -34,7 +34,14 @@ namespace calculator
         //Number buttons
         private void zero_button_Click(object sender, EventArgs e)
         {
-            OutputTxtBox.Text += "0";
+            if (OutputTxtBox.Text == "0")
+            {
+
+            }
+            else
+            {
+                OutputTxtBox.Text += "0";
+            }
             user_input += "0";
         }
 
@@ -163,9 +170,6 @@ namespace calculator
         {
             OutputTxtBox.Text = "0";
             user_input = "";
-            previous_num = 0;
-            count = 0;
-            multi_prev = 1;
             labelOperation.Text = "";
             num1 = 0;
         }
@@ -214,7 +218,7 @@ namespace calculator
             user_input = OutputTxtBox.Text;
         }
 
-        int previous_num = 0;
+        
         //Operation of numbers (+,-,/,*)
         private void add_operation_Click(object sender, EventArgs e)
         {
@@ -222,12 +226,12 @@ namespace calculator
             {
                 if (num1 == 0)
                 {
-                    num1 = Convert.ToDouble(user_input) + Convert.ToDouble(previous_num);
+                    num1 = Convert.ToDouble(user_input);
                     OutputTxtBox.Text = "0";
                     operation = "+";
                     labelOperation.Text = num1.ToString() + operation;
                     user_input = "";
-                    previous_num = Convert.ToInt32(num1);
+                    
                     count++;
                 }
                 else
@@ -260,12 +264,12 @@ namespace calculator
             {
                 if (num1 == 0)
                 {
-                    num1 = Convert.ToDouble(user_input) - Convert.ToDouble(previous_num);
+                    num1 = Convert.ToDouble(user_input);
                     OutputTxtBox.Text = "0";
                     operation = "-";
                     labelOperation.Text = num1.ToString() + operation;
                     user_input = "";
-                    previous_num = Convert.ToInt32(num1);
+                    
                     count++;
                 }
                 else
@@ -291,7 +295,7 @@ namespace calculator
             
         }
 
-        int multi_prev = 1;
+        
         private void multiply_operation_Click(object sender, EventArgs e)
         {
             
@@ -299,12 +303,11 @@ namespace calculator
             {
                 if (num1 == 0)
                 {
-                    num1 = Convert.ToDouble(user_input) * multi_prev;
+                    num1 = Convert.ToDouble(user_input);
                     OutputTxtBox.Text = "0";
                     operation = "*";
                     labelOperation.Text = num1.ToString() + operation;
                     user_input = "";
-                    multi_prev = Convert.ToInt32(num1);
                     count++;
                 }
                 else
@@ -328,7 +331,7 @@ namespace calculator
             equal_button.Enabled = true;
         }
 
-        int divide_prev = 1;
+        
         private void divide_operation_Click(object sender, EventArgs e)
         {
             try
@@ -419,10 +422,7 @@ namespace calculator
             //disable equal button
             equal_button.Enabled = false;
 
-            previous_num = 0;
-            count = 0;
-            multi_prev = 1;
-            divide_prev = 1;
+            
 
         }
 
