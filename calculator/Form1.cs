@@ -231,8 +231,6 @@ namespace calculator
                     operation = "+";
                     labelOperation.Text = num1.ToString() + operation;
                     user_input = "";
-                    
-                    count++;
                 }
                 else
                 {
@@ -242,8 +240,7 @@ namespace calculator
                     user_input = "";
                     OutputTxtBox.Text = "0";
                     num1 = result;
-                    equal_button.PerformClick();
-                    
+                    equal_button.PerformClick(); 
                 }
             }
             catch (Exception)
@@ -256,7 +253,7 @@ namespace calculator
             equal_button.Enabled = true;
         }
 
-        int count = 0;
+        
         private void subtract_operation_Click(object sender, EventArgs e)
         {
             
@@ -269,8 +266,6 @@ namespace calculator
                     operation = "-";
                     labelOperation.Text = num1.ToString() + operation;
                     user_input = "";
-                    
-                    count++;
                 }
                 else
                 {
@@ -308,7 +303,6 @@ namespace calculator
                     operation = "*";
                     labelOperation.Text = num1.ToString() + operation;
                     user_input = "";
-                    count++;
                 }
                 else
                 {
@@ -421,9 +415,6 @@ namespace calculator
             Percent_button.Enabled = true;
             //disable equal button
             equal_button.Enabled = false;
-
-            
-
         }
 
         private void Percent_button_Click_1(object sender, EventArgs e)
