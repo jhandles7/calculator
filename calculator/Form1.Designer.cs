@@ -59,7 +59,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.zero_button.AutoSize = true;
-            this.zero_button.Location = new System.Drawing.Point(80, 313);
+            this.zero_button.Location = new System.Drawing.Point(80, 322);
             this.zero_button.Name = "zero_button";
             this.zero_button.Size = new System.Drawing.Size(62, 44);
             this.zero_button.TabIndex = 1;
@@ -73,7 +73,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.decimal_button.AutoSize = true;
-            this.decimal_button.Location = new System.Drawing.Point(148, 313);
+            this.decimal_button.Location = new System.Drawing.Point(148, 322);
             this.decimal_button.Name = "decimal_button";
             this.decimal_button.Size = new System.Drawing.Size(62, 44);
             this.decimal_button.TabIndex = 2;
@@ -87,7 +87,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Percent_button.AutoSize = true;
-            this.Percent_button.Location = new System.Drawing.Point(12, 313);
+            this.Percent_button.Location = new System.Drawing.Point(12, 322);
             this.Percent_button.Name = "Percent_button";
             this.Percent_button.Size = new System.Drawing.Size(62, 44);
             this.Percent_button.TabIndex = 4;
@@ -100,7 +100,7 @@ namespace calculator
             this.one_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.one_button.Location = new System.Drawing.Point(12, 263);
+            this.one_button.Location = new System.Drawing.Point(12, 272);
             this.one_button.Name = "one_button";
             this.one_button.Size = new System.Drawing.Size(62, 44);
             this.one_button.TabIndex = 6;
@@ -113,7 +113,7 @@ namespace calculator
             this.four_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.four_button.Location = new System.Drawing.Point(12, 213);
+            this.four_button.Location = new System.Drawing.Point(12, 222);
             this.four_button.Name = "four_button";
             this.four_button.Size = new System.Drawing.Size(62, 44);
             this.four_button.TabIndex = 7;
@@ -126,7 +126,7 @@ namespace calculator
             this.two_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.two_button.Location = new System.Drawing.Point(80, 263);
+            this.two_button.Location = new System.Drawing.Point(80, 272);
             this.two_button.Name = "two_button";
             this.two_button.Size = new System.Drawing.Size(62, 44);
             this.two_button.TabIndex = 8;
@@ -139,7 +139,7 @@ namespace calculator
             this.five_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.five_button.Location = new System.Drawing.Point(80, 215);
+            this.five_button.Location = new System.Drawing.Point(80, 224);
             this.five_button.Name = "five_button";
             this.five_button.Size = new System.Drawing.Size(62, 42);
             this.five_button.TabIndex = 9;
@@ -152,7 +152,7 @@ namespace calculator
             this.seven_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.seven_button.Location = new System.Drawing.Point(12, 165);
+            this.seven_button.Location = new System.Drawing.Point(13, 176);
             this.seven_button.Name = "seven_button";
             this.seven_button.Size = new System.Drawing.Size(62, 42);
             this.seven_button.TabIndex = 10;
@@ -165,7 +165,7 @@ namespace calculator
             this.eight_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.eight_button.Location = new System.Drawing.Point(80, 165);
+            this.eight_button.Location = new System.Drawing.Point(80, 176);
             this.eight_button.Name = "eight_button";
             this.eight_button.Size = new System.Drawing.Size(62, 42);
             this.eight_button.TabIndex = 11;
@@ -178,7 +178,7 @@ namespace calculator
             this.three_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.three_button.Location = new System.Drawing.Point(148, 263);
+            this.three_button.Location = new System.Drawing.Point(148, 273);
             this.three_button.Name = "three_button";
             this.three_button.Size = new System.Drawing.Size(62, 44);
             this.three_button.TabIndex = 12;
@@ -191,7 +191,7 @@ namespace calculator
             this.six_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.six_button.Location = new System.Drawing.Point(148, 215);
+            this.six_button.Location = new System.Drawing.Point(148, 225);
             this.six_button.Name = "six_button";
             this.six_button.Size = new System.Drawing.Size(62, 42);
             this.six_button.TabIndex = 14;
@@ -205,7 +205,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.subtract_operation.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.subtract_operation.Location = new System.Drawing.Point(216, 215);
+            this.subtract_operation.Location = new System.Drawing.Point(216, 225);
             this.subtract_operation.Name = "subtract_operation";
             this.subtract_operation.Size = new System.Drawing.Size(81, 42);
             this.subtract_operation.TabIndex = 15;
@@ -219,7 +219,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.reset_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.reset_button.Location = new System.Drawing.Point(12, 124);
+            this.reset_button.Location = new System.Drawing.Point(12, 135);
             this.reset_button.Name = "reset_button";
             this.reset_button.Size = new System.Drawing.Size(62, 35);
             this.reset_button.TabIndex = 16;
@@ -233,7 +233,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.multiply_operation.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.multiply_operation.Location = new System.Drawing.Point(216, 165);
+            this.multiply_operation.Location = new System.Drawing.Point(216, 177);
             this.multiply_operation.Name = "multiply_operation";
             this.multiply_operation.Size = new System.Drawing.Size(81, 42);
             this.multiply_operation.TabIndex = 18;
@@ -291,7 +291,7 @@ namespace calculator
             this.OutputTxtBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.OutputTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OutputTxtBox.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OutputTxtBox.Location = new System.Drawing.Point(12, 54);
+            this.OutputTxtBox.Location = new System.Drawing.Point(13, 41);
             this.OutputTxtBox.Multiline = true;
             this.OutputTxtBox.Name = "OutputTxtBox";
             this.OutputTxtBox.Size = new System.Drawing.Size(284, 49);
@@ -306,7 +306,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Right)));
             this.equal_button.AutoSize = true;
             this.equal_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.equal_button.Location = new System.Drawing.Point(216, 313);
+            this.equal_button.Location = new System.Drawing.Point(215, 322);
             this.equal_button.Name = "equal_button";
             this.equal_button.Size = new System.Drawing.Size(81, 44);
             this.equal_button.TabIndex = 23;
@@ -320,7 +320,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.add_operation.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.add_operation.Location = new System.Drawing.Point(216, 263);
+            this.add_operation.Location = new System.Drawing.Point(216, 273);
             this.add_operation.Name = "add_operation";
             this.add_operation.Size = new System.Drawing.Size(80, 43);
             this.add_operation.TabIndex = 24;
@@ -333,7 +333,7 @@ namespace calculator
             this.nine_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.nine_button.Location = new System.Drawing.Point(148, 165);
+            this.nine_button.Location = new System.Drawing.Point(148, 177);
             this.nine_button.Name = "nine_button";
             this.nine_button.Size = new System.Drawing.Size(62, 42);
             this.nine_button.TabIndex = 17;
