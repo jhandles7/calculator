@@ -170,7 +170,7 @@ namespace calculator
         {
             OutputTxtBox.Text = "0";
             user_input = "";
-            labelOperation.Text = "";
+            lbl_operation.Text = "";
             num1 = 0;
         }
 
@@ -229,14 +229,14 @@ namespace calculator
                     num1 = Convert.ToDouble(user_input);
                     OutputTxtBox.Text = "0";
                     operation = "+";
-                    labelOperation.Text = num1.ToString() + operation;
+                    lbl_operation.Text = num1.ToString() + operation;
                     user_input = "";
                 }
                 else
                 {
                     equal_button.PerformClick();
                     operation = "+";
-                    labelOperation.Text = result.ToString() + operation;
+                    lbl_operation.Text = result.ToString() + operation;
                     user_input = "";
                     OutputTxtBox.Text = "0";
                     num1 = result;
@@ -264,14 +264,14 @@ namespace calculator
                     num1 = Convert.ToDouble(user_input);
                     OutputTxtBox.Text = "0";
                     operation = "-";
-                    labelOperation.Text = num1.ToString() + operation;
+                    lbl_operation.Text = num1.ToString() + operation;
                     user_input = "";
                 }
                 else
                 {
                     equal_button.PerformClick();
                     operation = "-";
-                    labelOperation.Text = result.ToString() + operation;
+                    lbl_operation.Text = result.ToString() + operation;
                     user_input = "";
                     OutputTxtBox.Text = "0";
                     num1 = result;
@@ -301,14 +301,14 @@ namespace calculator
                     num1 = Convert.ToDouble(user_input);
                     OutputTxtBox.Text = "0";
                     operation = "*";
-                    labelOperation.Text = num1.ToString() + operation;
+                    lbl_operation.Text = num1.ToString() + operation;
                     user_input = "";
                 }
                 else
                 {
                     equal_button.PerformClick();
                     operation = "*";
-                    labelOperation.Text = result.ToString() + operation;
+                    lbl_operation.Text = result.ToString() + operation;
                     user_input = "";
                     OutputTxtBox.Text = "0";
                     num1 = result;
@@ -332,19 +332,17 @@ namespace calculator
             {
                 if (num1 == 0)
                 {
-                    equal_button.PerformClick();
-                    operation = "-";
-                    labelOperation.Text = result.ToString() + operation;
+                    num1 = Convert.ToDouble(user_input);
+                    operation = "/";
+                    lbl_operation.Text = num1.ToString() + operation;
                     user_input = "";
                     OutputTxtBox.Text = "0";
-                    num1 = result;
-                    equal_button.PerformClick();
                 }
                 else
                 {
                     equal_button.PerformClick();
                     operation = "/";
-                    labelOperation.Text = result.ToString() + operation;
+                    lbl_operation.Text = result.ToString() + operation;
                     user_input = "";
                     OutputTxtBox.Text = "0";
                     num1 = result;
@@ -377,7 +375,7 @@ namespace calculator
                 result = num1 + num2;
                 OutputTxtBox.Text = Convert.ToString(result);
                 user_input = result.ToString();
-                labelOperation.Text += num2 + "=";
+                lbl_operation.Text += num2 + "=";
             }
 
             if (operation == "-")
@@ -385,7 +383,7 @@ namespace calculator
                 result = num1 - num2;
                 OutputTxtBox.Text = Convert.ToString(result);
                 user_input = result.ToString();
-                labelOperation.Text += num2 + "=";
+                lbl_operation.Text += num2 + "=";
             }
 
             if (operation == "*")
@@ -393,7 +391,7 @@ namespace calculator
                 result = num1 * num2;
                 OutputTxtBox.Text = Convert.ToString(result);
                 user_input = result.ToString();
-                labelOperation.Text += num2 + "=";
+                lbl_operation.Text += num2 + "=";
             }
 
             if (operation == "/")
@@ -408,7 +406,7 @@ namespace calculator
                     result = num1 / num2;
                     OutputTxtBox.Text = Convert.ToString(result);
                     user_input = result.ToString();
-                    labelOperation.Text += num2 + "=";
+                    lbl_operation.Text += num2 + "=";
                 }
             }
             //enable percent button
@@ -417,21 +415,59 @@ namespace calculator
             equal_button.Enabled = false;
         }
 
+        double new_num;
         private void Percent_button_Click_1(object sender, EventArgs e)
         {
-            double new_num;
+            
             try
             {           
                 new_num = Convert.ToDouble(user_input);
-                new_num = new_num / 100;
-                OutputTxtBox.Text = Convert.ToString(new_num);
-                user_input = new_num.ToString();
-                Percent_button.Enabled = false;
+                if (new_num.Equals(0))
+                {
+                    OutputTxtBox.Text = "Error";
+                }
+                else
+                {
+                    new_num = new_num / 100;
+                    OutputTxtBox.Text = Convert.ToString(new_num);
+                    user_input = new_num.ToString();
+                }
+             
             }
             catch (Exception)
             {
 
             }
+        }
+
+        private void btn_1overX_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                new_num = Convert.ToDouble(user_input);
+                if (new_num.Equals(0))
+                {
+                    OutputTxtBox.Text = "Error";
+                }
+                else
+                {
+                    new_num = 1 / new_num;
+                    OutputTxtBox.Text = Convert.ToString(new_num);
+                    user_input = new_num.ToString();
+                }         
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btn_squared_Click(object sender, EventArgs e)
+        {
+            new_num = Convert.ToDouble(user_input);
+            new_num = new_num*new_num;
+            OutputTxtBox.Text = Convert.ToString(new_num);
+            user_input = new_num.ToString();
         }
     }
 }

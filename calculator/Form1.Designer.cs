@@ -51,6 +51,11 @@ namespace calculator
             this.add_operation = new System.Windows.Forms.Button();
             this.nine_button = new System.Windows.Forms.Button();
             this.labelOperation = new System.Windows.Forms.Label();
+            this.btn_1overX = new System.Windows.Forms.Button();
+            this.btn_squared = new System.Windows.Forms.Button();
+            this.btn_sqr_root = new System.Windows.Forms.Button();
+            this.btn_CE = new System.Windows.Forms.Button();
+            this.lbl_operation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // zero_button
@@ -247,7 +252,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.delete_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.delete_button.Location = new System.Drawing.Point(80, 124);
+            this.delete_button.Location = new System.Drawing.Point(80, 135);
             this.delete_button.Name = "delete_button";
             this.delete_button.Size = new System.Drawing.Size(62, 35);
             this.delete_button.TabIndex = 19;
@@ -261,7 +266,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.negative_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.negative_Button.Location = new System.Drawing.Point(148, 124);
+            this.negative_Button.Location = new System.Drawing.Point(148, 135);
             this.negative_Button.Name = "negative_Button";
             this.negative_Button.Size = new System.Drawing.Size(62, 35);
             this.negative_Button.TabIndex = 20;
@@ -275,7 +280,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.divide_operation.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.divide_operation.Location = new System.Drawing.Point(216, 124);
+            this.divide_operation.Location = new System.Drawing.Point(216, 136);
             this.divide_operation.Name = "divide_operation";
             this.divide_operation.Size = new System.Drawing.Size(81, 34);
             this.divide_operation.TabIndex = 21;
@@ -291,10 +296,10 @@ namespace calculator
             this.OutputTxtBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.OutputTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OutputTxtBox.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OutputTxtBox.Location = new System.Drawing.Point(13, 41);
+            this.OutputTxtBox.Location = new System.Drawing.Point(13, 28);
             this.OutputTxtBox.Multiline = true;
             this.OutputTxtBox.Name = "OutputTxtBox";
-            this.OutputTxtBox.Size = new System.Drawing.Size(284, 49);
+            this.OutputTxtBox.Size = new System.Drawing.Size(284, 52);
             this.OutputTxtBox.TabIndex = 22;
             this.OutputTxtBox.Text = "0";
             this.OutputTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -351,12 +356,82 @@ namespace calculator
             this.labelOperation.Size = new System.Drawing.Size(0, 15);
             this.labelOperation.TabIndex = 25;
             // 
+            // btn_1overX
+            // 
+            this.btn_1overX.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_1overX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_1overX.Location = new System.Drawing.Point(12, 94);
+            this.btn_1overX.Name = "btn_1overX";
+            this.btn_1overX.Size = new System.Drawing.Size(62, 35);
+            this.btn_1overX.TabIndex = 26;
+            this.btn_1overX.Text = "1/x";
+            this.btn_1overX.UseVisualStyleBackColor = false;
+            this.btn_1overX.Click += new System.EventHandler(this.btn_1overX_Click);
+            // 
+            // btn_squared
+            // 
+            this.btn_squared.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_squared.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_squared.Location = new System.Drawing.Point(80, 94);
+            this.btn_squared.Name = "btn_squared";
+            this.btn_squared.Size = new System.Drawing.Size(62, 35);
+            this.btn_squared.TabIndex = 27;
+            this.btn_squared.Text = "x²";
+            this.btn_squared.UseVisualStyleBackColor = false;
+            this.btn_squared.Click += new System.EventHandler(this.btn_squared_Click);
+            // 
+            // btn_sqr_root
+            // 
+            this.btn_sqr_root.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_sqr_root.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_sqr_root.Location = new System.Drawing.Point(148, 94);
+            this.btn_sqr_root.Name = "btn_sqr_root";
+            this.btn_sqr_root.Size = new System.Drawing.Size(62, 35);
+            this.btn_sqr_root.TabIndex = 28;
+            this.btn_sqr_root.Text = "√x";
+            this.btn_sqr_root.UseVisualStyleBackColor = false;
+            // 
+            // btn_CE
+            // 
+            this.btn_CE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_CE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_CE.Location = new System.Drawing.Point(216, 95);
+            this.btn_CE.Name = "btn_CE";
+            this.btn_CE.Size = new System.Drawing.Size(80, 35);
+            this.btn_CE.TabIndex = 29;
+            this.btn_CE.Text = "CE";
+            this.btn_CE.UseVisualStyleBackColor = false;
+            // 
+            // lbl_operation
+            // 
+            this.lbl_operation.AutoSize = true;
+            this.lbl_operation.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_operation.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_operation.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.lbl_operation.Location = new System.Drawing.Point(23, 37);
+            this.lbl_operation.Name = "lbl_operation";
+            this.lbl_operation.Size = new System.Drawing.Size(0, 20);
+            this.lbl_operation.TabIndex = 30;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(304, 378);
+            this.Controls.Add(this.lbl_operation);
+            this.Controls.Add(this.btn_CE);
+            this.Controls.Add(this.btn_sqr_root);
+            this.Controls.Add(this.btn_squared);
+            this.Controls.Add(this.btn_1overX);
             this.Controls.Add(this.labelOperation);
             this.Controls.Add(this.add_operation);
             this.Controls.Add(this.equal_button);
@@ -410,6 +485,11 @@ namespace calculator
         private System.Windows.Forms.Button add_operation;
         private System.Windows.Forms.Button nine_button;
         private System.Windows.Forms.Label labelOperation;
+        private System.Windows.Forms.Button btn_1overX;
+        private System.Windows.Forms.Button btn_squared;
+        private System.Windows.Forms.Button btn_sqr_root;
+        private System.Windows.Forms.Button btn_CE;
+        private System.Windows.Forms.Label lbl_operation;
     }
 }
 
