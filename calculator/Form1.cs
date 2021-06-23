@@ -15,7 +15,6 @@ namespace calculator
 
         string user_input = "";
         double num1;
-        double num2;
         string operation;
         double result;
 
@@ -462,7 +461,6 @@ namespace calculator
             try
             {
                 new_num = Convert.ToDouble(user_input);
-                lbl_operation.Text = "1/" + new_num.ToString();
                 if (new_num.Equals(0))
                 {
                     OutputTxtBox.Text = "Error";
@@ -470,14 +468,14 @@ namespace calculator
                 else
                 {
                     if (num1!= 0)
-                    {
-                       
+                    {          
                         new_num = 1 / new_num;
                         user_input = new_num.ToString();
                         equal_button.PerformClick();
                     }
                     else
                     {
+                        lbl_operation.Text = "1/" + new_num.ToString();
                         new_num = 1 / new_num;
                         OutputTxtBox.Text = Convert.ToString(new_num);
                         user_input = new_num.ToString();
