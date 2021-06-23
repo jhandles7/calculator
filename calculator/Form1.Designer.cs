@@ -256,7 +256,7 @@ namespace calculator
             this.delete_button.Name = "delete_button";
             this.delete_button.Size = new System.Drawing.Size(62, 35);
             this.delete_button.TabIndex = 19;
-            this.delete_button.Text = "Clear";
+            this.delete_button.Text = "<--";
             this.delete_button.UseVisualStyleBackColor = false;
             this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
@@ -396,6 +396,7 @@ namespace calculator
             this.btn_sqr_root.TabIndex = 28;
             this.btn_sqr_root.Text = "√x";
             this.btn_sqr_root.UseVisualStyleBackColor = false;
+            this.btn_sqr_root.Click += new System.EventHandler(this.btn_sqr_root_Click);
             // 
             // btn_CE
             // 
@@ -409,6 +410,7 @@ namespace calculator
             this.btn_CE.TabIndex = 29;
             this.btn_CE.Text = "CE";
             this.btn_CE.UseVisualStyleBackColor = false;
+            this.btn_CE.Click += new System.EventHandler(this.btn_CE_Click);
             // 
             // lbl_operation
             // 

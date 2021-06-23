@@ -168,10 +168,16 @@ namespace calculator
         //Other button
         private void reset_button_Click(object sender, EventArgs e)
         {
-            OutputTxtBox.Text = "0";
-            user_input = "";
-            lbl_operation.Text = "";
-            num1 = 0;
+            try
+            {
+                OutputTxtBox.Text = "0";
+                user_input = "";
+                lbl_operation.Text = "";
+                num1 = 0;
+            }
+            catch (Exception)
+            {
+            }
         }
 
         private void decimal_button_Click(object sender, EventArgs e)
@@ -207,7 +213,7 @@ namespace calculator
 
         private void delete_button_Click(object sender, EventArgs e)
         {
-            if (OutputTxtBox.TextLength <1)
+            if (OutputTxtBox.TextLength <=1)
             {
                 OutputTxtBox.Text = "0";
             }
@@ -422,6 +428,7 @@ namespace calculator
             try
             {           
                 new_num = Convert.ToDouble(user_input);
+                lbl_operation.Text = new_num.ToString() + "%";
                 if (new_num.Equals(0))
                 {
                     OutputTxtBox.Text = "Error";
@@ -445,6 +452,7 @@ namespace calculator
             try
             {
                 new_num = Convert.ToDouble(user_input);
+                lbl_operation.Text = "1/" + new_num.ToString();
                 if (new_num.Equals(0))
                 {
                     OutputTxtBox.Text = "Error";
@@ -454,7 +462,7 @@ namespace calculator
                     new_num = 1 / new_num;
                     OutputTxtBox.Text = Convert.ToString(new_num);
                     user_input = new_num.ToString();
-                }         
+                }       
             }
             catch (Exception)
             {
@@ -465,9 +473,29 @@ namespace calculator
         private void btn_squared_Click(object sender, EventArgs e)
         {
             new_num = Convert.ToDouble(user_input);
+            lbl_operation.Text = "(" + new_num.ToString() + ")²";
             new_num = new_num*new_num;
             OutputTxtBox.Text = Convert.ToString(new_num);
             user_input = new_num.ToString();
+        }
+
+        private void btn_sqr_root_Click(object sender, EventArgs e)
+        {
+            new_num = Convert.ToDouble(user_input);
+            lbl_operation.Text = "√" + new_num.ToString();
+            new_num = Math.Round(Math.Sqrt(new_num), 6);
+            OutputTxtBox.Text = Convert.ToString(new_num);
+            user_input = new_num.ToString();
+        }
+
+        private void btn_CE_Click(object sender, EventArgs e)
+        {
+            if (num1 != 0)
+            {
+                lbl_operation.Text = num1.ToString();
+            }
+            OutputTxtBox.Text = "0";
+            user_input = "";
         }
     }
 }
