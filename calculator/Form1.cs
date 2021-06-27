@@ -12,7 +12,6 @@ namespace calculator
 {
     public partial class Form1 : Form
     {
-
         string user_input = "";
         double num1;
         string operation;
@@ -23,22 +22,10 @@ namespace calculator
             InitializeComponent();
         }
 
-        ///private void Percent_button_Click(object sender, EventArgs e)
-        ///{
-            //num1 = Convert.ToDouble(user_input);
-            //OutputTxtBox.Text += "%";
-            
-        //}
-
-
         //Number buttons
         private void zero_button_Click(object sender, EventArgs e)
         {
-            if (OutputTxtBox.Text == "0")
-            {
-
-            }
-            else
+            if (OutputTxtBox.Text != "0")
             {
                 OutputTxtBox.Text += "0";
             }
@@ -55,7 +42,6 @@ namespace calculator
             {
                 OutputTxtBox.Text += "1";
             }
-
             user_input += "1";
         }
 
@@ -69,7 +55,6 @@ namespace calculator
             {
                 OutputTxtBox.Text += "2";
             }
-
             user_input += "2";
         }
 
@@ -183,14 +168,12 @@ namespace calculator
         private void decimal_button_Click(object sender, EventArgs e)
         {                      
             if (OutputTxtBox.Text.Contains("."))
-            {
-                
+            {       
             }
             else
             {
                 OutputTxtBox.Text += ".";
             }
-
         }
 
         private void negative_Button_Click(object sender, EventArgs e)
@@ -206,8 +189,7 @@ namespace calculator
             else
             {
                 OutputTxtBox.Text = negative_num.ToString();
-            }
-            
+            }           
             user_input = OutputTxtBox.Text;         
         }
 
@@ -262,7 +244,6 @@ namespace calculator
         
         private void subtract_operation_Click(object sender, EventArgs e)
         {
-            
             try
             {
                 if (num1 == 0)
@@ -282,8 +263,7 @@ namespace calculator
                     OutputTxtBox.Text = "0";
                     num1 = result;
                     equal_button.PerformClick();
-                }
-                
+                } 
             }
             catch (Exception)
             {
@@ -293,7 +273,6 @@ namespace calculator
             Percent_button.Enabled = true;
             //enable equal button
             equal_button.Enabled = true;
-            
         }
 
         
@@ -424,7 +403,6 @@ namespace calculator
         double new_num;
         private void Percent_button_Click_1(object sender, EventArgs e)
         {
-            
             try
             {           
                 new_num = Convert.ToDouble(user_input);
@@ -448,7 +426,6 @@ namespace calculator
                         user_input = new_num.ToString();
                     }
                 }
-             
             }
             catch (Exception)
             {
@@ -464,6 +441,7 @@ namespace calculator
                 if (new_num.Equals(0))
                 {
                     OutputTxtBox.Text = "Error";
+                    lbl_operation.Text = "1/0 =";
                 }
                 else
                 {
