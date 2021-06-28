@@ -64,6 +64,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.zero_button.AutoSize = true;
+            this.zero_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.zero_button.Location = new System.Drawing.Point(80, 322);
             this.zero_button.Name = "zero_button";
             this.zero_button.Size = new System.Drawing.Size(62, 44);
@@ -78,6 +79,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.decimal_button.AutoSize = true;
+            this.decimal_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.decimal_button.Location = new System.Drawing.Point(148, 322);
             this.decimal_button.Name = "decimal_button";
             this.decimal_button.Size = new System.Drawing.Size(62, 44);
@@ -92,6 +94,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Percent_button.AutoSize = true;
+            this.Percent_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Percent_button.Location = new System.Drawing.Point(12, 322);
             this.Percent_button.Name = "Percent_button";
             this.Percent_button.Size = new System.Drawing.Size(62, 44);
@@ -105,6 +108,7 @@ namespace calculator
             this.one_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.one_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.one_button.Location = new System.Drawing.Point(12, 272);
             this.one_button.Name = "one_button";
             this.one_button.Size = new System.Drawing.Size(62, 44);
@@ -118,6 +122,7 @@ namespace calculator
             this.four_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.four_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.four_button.Location = new System.Drawing.Point(12, 222);
             this.four_button.Name = "four_button";
             this.four_button.Size = new System.Drawing.Size(62, 44);
@@ -131,6 +136,7 @@ namespace calculator
             this.two_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.two_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.two_button.Location = new System.Drawing.Point(80, 272);
             this.two_button.Name = "two_button";
             this.two_button.Size = new System.Drawing.Size(62, 44);
@@ -144,6 +150,7 @@ namespace calculator
             this.five_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.five_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.five_button.Location = new System.Drawing.Point(80, 224);
             this.five_button.Name = "five_button";
             this.five_button.Size = new System.Drawing.Size(62, 42);
@@ -157,6 +164,7 @@ namespace calculator
             this.seven_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.seven_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.seven_button.Location = new System.Drawing.Point(13, 176);
             this.seven_button.Name = "seven_button";
             this.seven_button.Size = new System.Drawing.Size(62, 42);
@@ -170,6 +178,7 @@ namespace calculator
             this.eight_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.eight_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.eight_button.Location = new System.Drawing.Point(80, 176);
             this.eight_button.Name = "eight_button";
             this.eight_button.Size = new System.Drawing.Size(62, 42);
@@ -183,6 +192,7 @@ namespace calculator
             this.three_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.three_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.three_button.Location = new System.Drawing.Point(148, 273);
             this.three_button.Name = "three_button";
             this.three_button.Size = new System.Drawing.Size(62, 44);
@@ -196,6 +206,7 @@ namespace calculator
             this.six_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.six_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.six_button.Location = new System.Drawing.Point(148, 225);
             this.six_button.Name = "six_button";
             this.six_button.Size = new System.Drawing.Size(62, 42);
@@ -210,6 +221,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.subtract_operation.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.subtract_operation.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.subtract_operation.Location = new System.Drawing.Point(216, 225);
             this.subtract_operation.Name = "subtract_operation";
             this.subtract_operation.Size = new System.Drawing.Size(81, 42);
@@ -224,6 +236,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.reset_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.reset_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reset_button.Location = new System.Drawing.Point(12, 135);
             this.reset_button.Name = "reset_button";
             this.reset_button.Size = new System.Drawing.Size(62, 35);
@@ -238,6 +251,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.multiply_operation.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.multiply_operation.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.multiply_operation.Location = new System.Drawing.Point(216, 177);
             this.multiply_operation.Name = "multiply_operation";
             this.multiply_operation.Size = new System.Drawing.Size(81, 42);
@@ -252,6 +266,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.delete_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.delete_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.delete_button.Location = new System.Drawing.Point(80, 135);
             this.delete_button.Name = "delete_button";
             this.delete_button.Size = new System.Drawing.Size(62, 35);
@@ -266,6 +281,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.negative_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.negative_Button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.negative_Button.Location = new System.Drawing.Point(148, 135);
             this.negative_Button.Name = "negative_Button";
             this.negative_Button.Size = new System.Drawing.Size(62, 35);
@@ -280,6 +296,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.divide_operation.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.divide_operation.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.divide_operation.Location = new System.Drawing.Point(216, 136);
             this.divide_operation.Name = "divide_operation";
             this.divide_operation.Size = new System.Drawing.Size(81, 34);
@@ -295,6 +312,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Right)));
             this.OutputTxtBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.OutputTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.OutputTxtBox.Enabled = false;
             this.OutputTxtBox.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.OutputTxtBox.Location = new System.Drawing.Point(13, 28);
             this.OutputTxtBox.Multiline = true;
@@ -311,6 +329,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Right)));
             this.equal_button.AutoSize = true;
             this.equal_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.equal_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.equal_button.Location = new System.Drawing.Point(215, 322);
             this.equal_button.Name = "equal_button";
             this.equal_button.Size = new System.Drawing.Size(81, 44);
@@ -325,6 +344,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.add_operation.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.add_operation.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.add_operation.Location = new System.Drawing.Point(216, 273);
             this.add_operation.Name = "add_operation";
             this.add_operation.Size = new System.Drawing.Size(80, 43);
@@ -338,6 +358,7 @@ namespace calculator
             this.nine_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.nine_button.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nine_button.Location = new System.Drawing.Point(148, 177);
             this.nine_button.Name = "nine_button";
             this.nine_button.Size = new System.Drawing.Size(62, 42);
@@ -362,6 +383,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_1overX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_1overX.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_1overX.Location = new System.Drawing.Point(12, 94);
             this.btn_1overX.Name = "btn_1overX";
             this.btn_1overX.Size = new System.Drawing.Size(62, 35);
@@ -376,6 +398,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_squared.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_squared.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_squared.Location = new System.Drawing.Point(80, 94);
             this.btn_squared.Name = "btn_squared";
             this.btn_squared.Size = new System.Drawing.Size(62, 35);
@@ -390,6 +413,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_sqr_root.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_sqr_root.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_sqr_root.Location = new System.Drawing.Point(148, 94);
             this.btn_sqr_root.Name = "btn_sqr_root";
             this.btn_sqr_root.Size = new System.Drawing.Size(62, 35);
@@ -404,6 +428,7 @@ namespace calculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_CE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_CE.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_CE.Location = new System.Drawing.Point(216, 95);
             this.btn_CE.Name = "btn_CE";
             this.btn_CE.Size = new System.Drawing.Size(80, 35);
@@ -456,6 +481,8 @@ namespace calculator
             this.Controls.Add(this.Percent_button);
             this.Controls.Add(this.decimal_button);
             this.Controls.Add(this.zero_button);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Calculator";
             this.TransparencyKey = System.Drawing.Color.White;
