@@ -390,6 +390,7 @@ namespace calculator
                     if (num1 != 0)
                     {
                         new_num = new_num / 100;
+                        OutputTxtBox.Text = new_num.ToString();
                         equal_button.PerformClick();
                     }
                     else
@@ -421,6 +422,7 @@ namespace calculator
                     if (num1!= 0)
                     {          
                         new_num = 1 / new_num;
+                        OutputTxtBox.Text = new_num.ToString();
                         equal_button.PerformClick();
                     }
                     else
@@ -443,6 +445,7 @@ namespace calculator
             {
                 new_num = Convert.ToDouble(OutputTxtBox.Text);
                 new_num = new_num * new_num;
+                OutputTxtBox.Text = new_num.ToString();
                 equal_button.PerformClick();
             }
             else
@@ -460,6 +463,7 @@ namespace calculator
             {
                 new_num = Convert.ToDouble(OutputTxtBox.Text);
                 new_num = Math.Round(Math.Sqrt(new_num), 6);
+                OutputTxtBox.Text = new_num.ToString();
                 equal_button.PerformClick();
                 OutputTxtBox.Text = Convert.ToString(result);
             }
