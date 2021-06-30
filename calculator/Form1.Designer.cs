@@ -29,6 +29,7 @@ namespace calculator
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.zero_button = new System.Windows.Forms.Button();
             this.decimal_button = new System.Windows.Forms.Button();
             this.Percent_button = new System.Windows.Forms.Button();
@@ -482,6 +483,7 @@ namespace calculator
             this.Controls.Add(this.decimal_button);
             this.Controls.Add(this.zero_button);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Calculator";

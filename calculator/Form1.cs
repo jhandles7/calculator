@@ -19,6 +19,7 @@ namespace calculator
         public Form1()
         {
             InitializeComponent();
+            lbl_operation.BackColor = Color.AliceBlue;
         }
 
         //Number buttons
@@ -155,10 +156,7 @@ namespace calculator
 
         private void decimal_button_Click(object sender, EventArgs e)
         {                      
-            if (OutputTxtBox.Text.Contains("."))
-            {       
-            }
-            else
+            if (!OutputTxtBox.Text.Contains("."))
             {
                 OutputTxtBox.Text += ".";
             }
@@ -260,7 +258,6 @@ namespace calculator
         
         private void multiply_operation_Click(object sender, EventArgs e)
         {
-            
             try
             {
                 if (num1 == 0)
@@ -320,7 +317,6 @@ namespace calculator
             Percent_button.Enabled = true;
             //enable equal button
             equal_button.Enabled = true;
-
         }
 
         private void equal_button_Click_1(object sender, EventArgs e)
@@ -395,15 +391,14 @@ namespace calculator
                     }
                     else
                     {
-                        lbl_operation.Text = new_num.ToString() + "%";
-                        new_num = new_num / 100;
-                        OutputTxtBox.Text = Convert.ToString(new_num);
+                        lbl_operation.Text = "0";
+                        OutputTxtBox.Text = "0";
                     }
                 }
             }
             catch (Exception)
             {
-
+                Percent_button.Enabled = false;
             }
         }
 
