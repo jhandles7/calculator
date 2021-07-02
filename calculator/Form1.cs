@@ -475,7 +475,7 @@ namespace calculator
         {
             if (num1 != 0)
             {
-                lbl_operation.Text = num1.ToString();
+                lbl_operation.Text = num1.ToString() + operation;
             }
             OutputTxtBox.Text = "0";
         }
