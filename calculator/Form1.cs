@@ -473,9 +473,10 @@ namespace calculator
 
         private void btn_CE_Click(object sender, EventArgs e)
         {
-            if (num1 != 0)
+            if (result != 0)
             {
-                lbl_operation.Text = num1.ToString() + operation;
+                num1 = result;
+                lbl_operation.Text = result.ToString();
             }
             OutputTxtBox.Text = "0";
         }
