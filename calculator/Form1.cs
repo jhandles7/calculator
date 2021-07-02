@@ -359,12 +359,12 @@ namespace calculator
 
                 else
                 {
-                    result = num1 / num2;
+                    result = Math.Round((num1 / num2), 6);
                     OutputTxtBox.Text = Convert.ToString(result);
                     lbl_operation.Text = num1 + operation + num2 + "=";
                 }
             }
-            num1 = result;
+            num1 = 0;
             //enable percent button
             Percent_button.Enabled = true;
             //disable equal button
@@ -416,14 +416,14 @@ namespace calculator
                 {
                     if (num1!= 0)
                     {          
-                        new_num = 1 / new_num;
+                        new_num = Math.Round((1 / new_num), 6);
                         OutputTxtBox.Text = new_num.ToString();
                         equal_button.PerformClick();
                     }
                     else
                     {
                         lbl_operation.Text = "1/" + new_num.ToString();
-                        new_num = 1 / new_num;
+                        new_num = Math.Round((1 / new_num), 6);
                         OutputTxtBox.Text = Convert.ToString(new_num);
                     }
                 }       
@@ -439,7 +439,7 @@ namespace calculator
             if (num1 != 0)
             {
                 new_num = Convert.ToDouble(OutputTxtBox.Text);
-                new_num = new_num * new_num;
+                new_num = Math.Round((new_num * new_num), 6);
                 OutputTxtBox.Text = new_num.ToString();
                 equal_button.PerformClick();
             }
@@ -447,7 +447,7 @@ namespace calculator
             {
                 new_num = Convert.ToDouble(OutputTxtBox.Text);
                 lbl_operation.Text = "(" + new_num.ToString() + ")²";
-                new_num = new_num * new_num;
+                new_num = Math.Round((new_num * new_num), 6);
                 OutputTxtBox.Text = Convert.ToString(new_num);
             }
         }
