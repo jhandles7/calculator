@@ -477,6 +477,7 @@ namespace calculator
             {
                 if (result != 0)
                 {
+                    num1 = result;
                     lbl_operation.Text = result.ToString();
                 }
                 else
